@@ -111,17 +111,19 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-items: baseline;
   gap: 2rem;
-
   margin-top: 3rem;
 }
 .qualites {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 1rem;
+
+  gap: 0.5rem;
   flex-direction: column;
   width: 100%;
+  padding: 0px;
 
   border-bottom: rgba(255, 0, 0, 0.774) 2px solid;
 }
@@ -130,6 +132,7 @@ main {
   justify-content: start;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
   width: 100%;
 
   border-bottom: rgba(255, 0, 0, 0.774) 2px solid;
@@ -145,9 +148,13 @@ main {
 .qualite {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 span {
   font-weight: bold;
+}
+span .texte1 {
+  padding-top: 100px;
 }
 
 @media (min-width: 500px) {
@@ -163,9 +170,12 @@ span {
   .experiences {
     border-right: rgba(255, 0, 0, 0.774) 2px solid;
     border-bottom: none;
+    height: 100%;
+    flex-grow: 2;
   }
   .connaissances {
     border-bottom: none;
+    height: 100%;
   }
 }
 
