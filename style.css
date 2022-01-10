@@ -49,8 +49,8 @@ main {
 /* bio */
 .bio {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .bio-text {
@@ -84,10 +84,24 @@ main {
 .bio-img {
   width: 200px;
   height: 200px;
+  margin-top: 2rem;
 }
-@media screen and (min-width: 700px) {
+@media (min-width: 500px) {
+  .bio {
+    flex-direction: row;
+    align-content: center;
+  }
+  .bio-img {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
 }
 
+@media (min-width: 780px) {
+  .bio-img {
+    margin-left: 0rem;
+  }
+}
 /* bio */
 
 /* Qualite & experience */
