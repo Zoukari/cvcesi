@@ -81,6 +81,67 @@ main {
   z-index: 2;
 }
 
+.hobbies {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 1375px;
+}
+.hobbietitle {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-right: red 2px solid;
+  padding: 15px 12px;
+}
+
+.hobbielist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hobbiecenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textehobbie {
+  font-size: 14px;
+}
+
+.langues {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 1260px;
+}
+.languetitle {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-right: red 2px solid;
+  padding: 15px 12px;
+}
+
+.languelist {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.languecenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textelangue {
+  font-size: 14px;
+}
 .bio-img {
   width: 200px;
   height: 200px;
