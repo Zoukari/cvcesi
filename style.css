@@ -81,67 +81,6 @@ main {
   z-index: 2;
 }
 
-.hobbies {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  width: 100%;
-}
-.hobbietitle {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  border-right: red 2px solid;
-  padding: 15px 12px;
-}
-
-.hobbielist {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.hobbiecenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.textehobbie {
-  font-size: 14px;
-}
-
-.langues {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  width: 100%;
-}
-.languetitle {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  border-right: red 2px solid;
-  padding: 15px 12px;
-}
-
-.languelist {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.languecenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.textelangue {
-  font-size: 14px;
-}
 .bio-img {
   width: 200px;
   height: 200px;
@@ -231,3 +170,134 @@ span {
 }
 
 /*Fin  Qualite & experience */
+
+/* compétence */
+
+.skill {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.compétences {
+  /* grid-column: 1 / span 2;
+  grid-row: 1 / span 2; */
+  display: flex;
+  flex-direction: column;
+}
+.competence-title {
+  border-bottom: red 2px solid;
+  padding: 15px 8px;
+}
+
+.hobbies {
+  /* grid-column: 3 / span 1;
+  grid-row: 1 / span 1; */
+  margin: 20px 0;
+  width: 100%;
+  font-size: 0.8;
+}
+.hobbietitle {
+  border-bottom: red 2px solid;
+  padding: 15px 8px;
+}
+
+.hobbielist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hobbiecenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 5s;
+}
+
+/* .hobbiecenter:hover {
+  transform: translate(25px, 15px);
+} */
+.textehobbie {
+  font-size: 14px;
+}
+
+.langues {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.languetitle {
+  border-bottom: red 2px solid;
+  padding: 15px 12px;
+}
+
+.languelist {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.languecenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textelangue {
+  font-size: 14px;
+}
+@media (min-width: 700px) {
+  .skill {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .compétences {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: end;
+  }
+
+  .hobbietitle {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border-right: red 2px solid;
+    border-bottom: none;
+    padding: 15px 8px;
+  }
+  .langues {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .languetitle {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border-right: red 2px solid;
+    border-bottom: none;
+    padding: 15px 12px;
+  }
+
+  .langues {
+    /*   grid-column: 3 / span 1;
+  grid-row: 2 / span 1; */
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
