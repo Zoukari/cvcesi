@@ -49,9 +49,11 @@ main {
 .bio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .bio-text {
   padding: 2rem;
+  max-width: 600px;
   background: #4a7fc1;
   position: relative;
 }
@@ -60,4 +62,13 @@ main {
   position: absolute;
   top: 10%;
   left: 0;
+}
+
+.bio-man {
+  height: 200px;
+  width: 80px;
+  position: absolute;
+  top: 35%;
+  left: 5rem;
+  z-index: 2;
 }
