@@ -43,33 +43,41 @@ main {
 }
 .job::after {
   content: "";
-  background: url("assets/Fichier 31.png") no-repeat center/100%;
+  background-image: url("assets/Fichier 31.png") no-repeat center/100%;
 }
 
+/* bio */
 .bio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .bio-text {
   padding: 2rem;
+  font-size: 14px;
   max-width: 600px;
   background: #4a7fc1;
   position: relative;
 }
+.bio-text::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  z-index: 4;
+  background-image: url("assets/Fichier 30.png") no-repeat;
+}
 
 .bio-diamond {
   position: absolute;
-  top: 10%;
+  top: 40%;
   left: 0;
 }
 
 .bio-man {
   height: 200px;
   width: 80px;
-  position: absolute;
-  top: 35%;
-  left: 5rem;
+  max-width: 80px;
   z-index: 2;
 }
 
@@ -134,3 +142,72 @@ main {
 .textelangue {
   font-size: 14px;
 }
+.bio-img {
+  width: 200px;
+  height: 200px;
+}
+@media screen and (min-width: 700px) {
+}
+
+/* bio */
+
+/* Qualite & experience */
+
+.blocmilieu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+.qualite {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+
+  border-bottom: rgba(255, 0, 0, 0.774) 2px solid;
+}
+.experiences {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  border-bottom: rgba(255, 0, 0, 0.774) 2px solid;
+}
+.connaissances {
+  width: 100%;
+}
+
+.imgtitle {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .blocmilieu {
+    flex-direction: row;
+
+    margin-top: 4rem;
+  }
+  .qualite {
+    border-right: rgba(255, 0, 0, 0.774) 2px solid;
+    border-bottom: none;
+  }
+  .experiences {
+    border-right: rgba(255, 0, 0, 0.774) 2px solid;
+    border-bottom: none;
+  }
+  .connaissances {
+    border-right: rgba(255, 0, 0, 0.774) 2px solid;
+    border-bottom: none;
+  }
+}
+
+/*Fin  Qualite & experience */
