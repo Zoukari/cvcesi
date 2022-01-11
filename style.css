@@ -59,6 +59,7 @@ main {
   max-width: 600px;
   background: #4a7fc1;
   position: relative;
+  color: #fff;
 }
 .bio-text::after {
   content: "";
@@ -185,8 +186,6 @@ span .texte1 {
 
 .skill {
   padding: 3rem 0;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
 }
 .compétences {
   /* grid-column: 1 / span 2;
@@ -230,7 +229,7 @@ span .texte1 {
 .hobbies {
   /* grid-column: 3 / span 1;
   grid-row: 1 / span 1; */
-  margin: 20px 0;
+  margin: 4rem 0;
   width: 100%;
   font-size: 0.8;
 }
@@ -258,11 +257,12 @@ span .texte1 {
   transform: translate(25px, 15px);
 } */
 .textehobbie {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .langues {
   width: 100%;
+  margin: 2rem 0;
 }
 .languetitle {
   border-bottom: red 2px solid;
@@ -287,6 +287,7 @@ span .texte1 {
 }
 @media (min-width: 800px) {
   .skill {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
@@ -301,8 +302,8 @@ span .texte1 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
     display: flex;
-    justify-content: center;
     margin-top: 3.5rem;
+    margin-bottom: 0;
   }
 
   .hobbietitle {
