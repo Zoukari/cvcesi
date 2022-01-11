@@ -259,12 +259,15 @@ span .ecriture {
   border-bottom: red 2px solid;
   padding: 15px 8px;
 }
-
+.compétence-name{
+  font-weight:bold;
+}
 .compétence-range {
   background: linear-gradient(180deg, #daf1cb 33%, #bfdeaf 33%),
     linear-gradient(180deg, #bfdeaf 66%, #50864b 66%);
   position: relative;
   padding: 1rem;
+  box-shadow:8px 5px 0px rgba(0, 0, 0,0.3);
 }
 
 .compétence-range::before {
