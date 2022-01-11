@@ -3,9 +3,9 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-
   margin: 0;
   padding: 0;
+  background: url("assets/Fichier 36.png");
 }
 
 .title {
@@ -152,9 +152,17 @@ main {
 }
 span {
   font-weight: bold;
+  font-family: "Teko" sans-serif;
 }
+
 span .texte1 {
   padding-top: 100px;
+  font-family: "Teko" sans-serif;
+}
+span .ecriture {
+  font-weight: bold;
+  font-family: "Teko" sans-serif;
+  text-r;
 }
 
 @media (min-width: 500px) {
