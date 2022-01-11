@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Press+Start+2P&display=swap");
 
+:root {
+  --var1: 100%;
+}
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -135,6 +138,7 @@ main {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  border-radius: 100px;
 }
 
 @keyframes fadeInAnimation {
@@ -252,12 +256,12 @@ span {
 
 span .texte1 {
   padding-top: 100px;
-  font-family: "Teko" sans-serif;
 }
 span.ecriture {
   font-weight: bold;
   font-family: "Press Start 2P", cursive;
   font-size: 40px;
+  color: #e25f3f;
 }
 
 @media (min-width: 500px) {
@@ -318,12 +322,13 @@ span.ecriture {
   content: "";
   background: #f3d344;
   position: absolute;
-  width: 60%;
+  width: var(--var1);
   height: 50%;
   top: 10px;
   left: 5px;
   z-index: 4;
 }
+
 .compétence-range::after {
   content: "";
   background: #50864b;
