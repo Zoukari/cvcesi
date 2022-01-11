@@ -49,6 +49,11 @@ main {
   padding: 1rem;
 }
 
+.job::hover {
+back
+
+}
+
 /* bio */
 .bio {
   display: flex;
@@ -60,9 +65,17 @@ main {
   padding: 1.75rem;
   font-size: 14px;
   max-width: 600px;
-  background: #4a7fc1;
+  background: #fff9e8;
+ /*  background: #4a7fc1; */
   position: relative;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  transition: all 1s;
+}
+
+.bio-text:hover{
+background-color: #4a7fc1;
+
+
 }
 
 .bio-text::before {
@@ -181,6 +194,7 @@ main {
 
   border-bottom: rgba(255, 0, 0, 0.774) 2px solid;
 }
+
 .experiences {
   display: flex;
   justify-content: start;
@@ -199,6 +213,11 @@ main {
   display: flex;
   justify-content: center;
 }
+
+.imgtitle:hover {
+  transform: translate(0, -15px);
+} 
+
 .qualite {
   display: flex;
   flex-direction: column;
@@ -321,12 +340,12 @@ span .ecriture {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 5s;
+  transition: duration 1s;
 }
 
-/* .hobbiecenter:hover {
-  transform: translate(25px, 15px);
-} */
+ .hobbiecenter:hover {
+  transform: translate(0, -15px);
+} 
 .textehobbie {
   font-size: 12px;
 }
@@ -352,7 +371,12 @@ span .ecriture {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: duration 1s;
 }
+.languecenter:hover {
+  transform: translate(0, -15px);
+} 
+
 .textelangue {
   font-size: 14px;
 }
