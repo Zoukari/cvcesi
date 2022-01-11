@@ -39,11 +39,14 @@ main {
 .job {
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: start;
-}
-.job::after {
-  content: "";
-  background-image: url("assets/Fichier 31.png") no-repeat center/100%;
+  z-index: 4;
+  background-image: url("assets/Fichier 31.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center 32px;
+  padding: 1rem;
 }
 
 /* bio */
@@ -72,6 +75,21 @@ main {
   margin-bottom: 1rem;
   z-index: 4;
   background-image: url("assets/Fichier 30.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bio-text::after {
+  content: "";
+  position: absolute;
+  min-width: 60px;
+  min-height: 60px;
+  top: 0;
+  right: 0;
+  transform: translate(35px, -20px);
+  z-index: 4;
+  background-image: url("assets/Fichier 28.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -115,7 +133,9 @@ main {
   .bio-img {
     margin-left: 0rem;
   }
-
+  header {
+    flex-direction: row;
+  }
   .bio-text {
     display: flex;
     justify-content: center;
