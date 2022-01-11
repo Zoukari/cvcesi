@@ -269,7 +269,7 @@ span .ecriture {
 }
 .compétence-range {
 
-  background: linear-gradient(180deg, #daf1cb 33%, #bfdeaf 33%),
+  background: linear-gradient(180deg, #daf1cb 33%, rgb(191, 222, 175) 33%),
     linear-gradient(180deg, #bfdeaf 66%, #50864b 66%);
   position: relative;
   padding: 1rem;
