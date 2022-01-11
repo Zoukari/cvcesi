@@ -201,15 +201,18 @@ span .texte1 {
 }
 
 .compétence-range {
-  background: greenyellow;
+  background: linear-gradient(180deg, #d3e8c6 33%, #bfdeaf 33%, #50864b 75%);
+  position: relative;
   padding: 1rem;
 }
 .compétence-range::after {
   content: "";
-  background: green;
+  background: #50864b;
   position: absolute;
-  min-width: 200px;
-  height: 1px;
+  width: 93%;
+  height: 70%;
+  top: 5px;
+  left: 5px;
   z-index: 2;
 }
 .hobbies {
