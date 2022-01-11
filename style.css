@@ -54,19 +54,27 @@ main {
   align-items: center;
 }
 .bio-text {
-  padding: 2rem;
+  padding: 1.75rem;
   font-size: 14px;
   max-width: 600px;
   background: #4a7fc1;
   position: relative;
   color: #fff;
 }
-.bio-text::after {
+
+.bio-text::before {
   content: "";
-  width: 200px;
-  height: 200px;
+  display: block;
+  margin: auto;
+  min-width: 110px;
+  min-height: 110px;
+  transform: translateY(-12px);
+  margin-bottom: 1rem;
   z-index: 4;
-  background-image: url("assets/Fichier 30.png") no-repeat;
+  background-image: url("assets/Fichier 30.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .bio-diamond {
@@ -90,7 +98,9 @@ main {
 @media (min-width: 500px) {
   .bio {
     flex-direction: row;
+    justify-content: space-around;
     align-content: center;
+    padding: 2rem 0 0 1.25rem;
   }
   .bio-img {
     margin-left: 1rem;
@@ -98,9 +108,29 @@ main {
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 700px) {
   .bio-img {
     margin-left: 0rem;
+  }
+
+  .bio-text {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .bio-text::before {
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    left: 0;
+    transform: translate(-65px, 25px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .bio-text {
+    margin-right: 0;
   }
 }
 /* bio */
@@ -200,7 +230,8 @@ span .texte1 {
 }
 
 .compétence-range {
-  background: linear-gradient(180deg, #d3e8c6 33%, #bfdeaf 33%, #50864b 75%);
+  background: linear-gradient(180deg, #daf1cb 33%, #bfdeaf 33%),
+    linear-gradient(180deg, #bfdeaf 66%, #50864b 66%);
   position: relative;
   padding: 1rem;
 }
