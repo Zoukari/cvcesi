@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Press+Start+2P&display=swap");
 
 html,
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
- 
 }
 
 .title {
@@ -49,11 +48,6 @@ main {
   padding: 1rem;
 }
 
-.job::hover {
-back
-
-}
-
 /* bio */
 .bio {
   display: flex;
@@ -66,22 +60,21 @@ back
   font-size: 14px;
   max-width: 600px;
   background: #fff9e8;
- /*  background: #4a7fc1; */
+  /*  background: #4a7fc1; */
   position: relative;
   color: rgb(0, 0, 0);
   transition: all 1s;
 }
 
-.bio-text:hover{
-background-color: #4a7fc1;
-
-
+.bio-text:hover {
+  background-color: #4a7fc1;
 }
 
 .bio-text::before {
   content: "";
   display: block;
   margin: auto;
+
   min-width: 110px;
   min-height: 110px;
   transform: translateY(-12px);
@@ -91,6 +84,9 @@ background-color: #4a7fc1;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .bio-text::after {
@@ -106,6 +102,17 @@ background-color: #4a7fc1;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100%);
+  }
 }
 
 .bio-diamond {
@@ -125,7 +132,20 @@ background-color: #4a7fc1;
   width: 200px;
   height: 200px;
   margin-top: 2rem;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 500px) {
   header {
     flex-direction: column;
@@ -216,7 +236,7 @@ background-color: #4a7fc1;
 
 .imgtitle:hover {
   transform: translate(0, -15px);
-} 
+}
 
 .qualite {
   display: flex;
@@ -225,17 +245,19 @@ background-color: #4a7fc1;
 }
 span {
   font-weight: bold;
-  font-family: "Teko" sans-serif;
+  font-family: "Press Start 2P", cursive;
+  font-size: 11px;
+  vertical-align: middle;
 }
 
 span .texte1 {
   padding-top: 100px;
   font-family: "Teko" sans-serif;
 }
-span .ecriture {
+span.ecriture {
   font-weight: bold;
-  font-family: "Teko" sans-serif;
-  text-r;
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
 }
 
 @media (min-width: 500px) {
@@ -274,25 +296,22 @@ span .ecriture {
   flex-direction: column;
   width: 100%;
 }
-.competence{
+.competence {
   width: 100%;
-  
-  
 }
 .competence-title {
   border-bottom: red 2px solid;
   padding: 15px 8px;
 }
-.compétence-name{
-  font-weight:bold;
+.compétence-name {
+  font-weight: bold;
 }
 .compétence-range {
-
-  background: linear-gradient(180deg, #daf1cb 33%, rgb(191, 222, 175) 33%),
+  background: linear-gradient(180deg, #daf1cb 33%, #bfdeaf 33%),
     linear-gradient(180deg, #bfdeaf 66%, #50864b 66%);
   position: relative;
   padding: 1rem;
-  box-shadow:8px 5px 0px rgba(0, 0, 0,0.3);
+  box-shadow: 8px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .compétence-range::before {
@@ -343,9 +362,9 @@ span .ecriture {
   transition: duration 1s;
 }
 
- .hobbiecenter:hover {
+.hobbiecenter:hover {
   transform: translate(0, -15px);
-} 
+}
 .textehobbie {
   font-size: 12px;
 }
@@ -375,7 +394,7 @@ span .ecriture {
 }
 .languecenter:hover {
   transform: translate(0, -15px);
-} 
+}
 
 .textelangue {
   font-size: 14px;
@@ -402,13 +421,12 @@ span .ecriture {
     padding: 15px 4px;
     margin: 0 1rem 0 0;
   }
-  .competence-list{
+  .competence-list {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
-   
+    justify-content: space-around;
   }
 
   .hobbies {
@@ -454,14 +472,12 @@ span .ecriture {
 @media (min-width: 700px) {
   .competence {
     display: flex;
-    justify-content:space-between
-    
+    justify-content: space-between;
   }
-  .compétence-name{
+  .compétence-name {
     width: 30%;
   }
   .compétence-range {
     width: 70%;
-    
   }
 }
