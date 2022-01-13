@@ -13,7 +13,12 @@ body {
 .title {
   font-weight: medium;
 }
-h2,
+h2 {
+  font-family: "Press Start 2P";
+  font-size: 17px;
+  margin-top: 25px;
+  color: #662515;
+}
 h3,
 h4 {
   font-weight: bold;
@@ -33,7 +38,7 @@ main {
 
 .contact {
   display: block;
-  background: url("assets/Fichier 35.png") no-repeat center/100%;
+  background: url("assets/icone-bulle.png") no-repeat center/100%;
   padding: 1rem 2.5rem;
   font-size: smaller;
 }
@@ -44,7 +49,7 @@ main {
   position: relative;
   align-items: start;
   z-index: 4;
-  background-image: url("assets/Fichier 31.png");
+  background-image: url("assets/icone-banderolle.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center 32px;
@@ -60,10 +65,10 @@ main {
 }
 .bio-text {
   padding: 1.75rem;
+  margin: 400px;
   font-size: 14px;
   max-width: 600px;
-  background: #fff9e8;
-  /*  background: #4a7fc1; */
+  background: #4a7fc1;
   position: relative;
   color: rgb(0, 0, 0);
   transition: all 1s;
@@ -77,13 +82,12 @@ main {
   content: "";
   display: block;
   margin: auto;
-
   min-width: 110px;
   min-height: 110px;
   transform: translateY(-12px);
   margin-bottom: 1rem;
   z-index: 4;
-  background-image: url("assets/Fichier 30.png");
+  z-index: 4;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -101,7 +105,7 @@ main {
   right: 0;
   transform: translate(35px, -20px);
   z-index: 4;
-  background-image: url("assets/Fichier 28.png");
+  z-index: 4;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
