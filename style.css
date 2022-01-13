@@ -65,7 +65,7 @@ main {
 }
 .bio-text {
   padding: 1.75rem;
-  margin: 400px;
+  margin-top: 4rem;
   font-size: 14px;
   max-width: 600px;
   background: #4a7fc1;
@@ -87,7 +87,7 @@ main {
   transform: translateY(-12px);
   margin-bottom: 1rem;
   z-index: 4;
-  z-index: 4;
+  background-image: url("./assets/icone-fantome.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -105,7 +105,7 @@ main {
   right: 0;
   transform: translate(35px, -20px);
   z-index: 4;
-  z-index: 4;
+  background-image: url("./assets/icone-diamant.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -182,6 +182,7 @@ main {
     justify-content: center;
     padding: 1.25rem;
     margin-right: 1.25rem;
+    margin-top: 0rem;
   }
   .bio-text::before {
     position: absolute;
